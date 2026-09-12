@@ -11,6 +11,7 @@ import {
   SiTypescript,
   SiTailwindcss,
 } from "react-icons/si";
+import { toast } from "react-toastify";
 
 const icons = {
   react: <FaReact />,
@@ -38,7 +39,14 @@ const AvailableTecnology = ({ datas, selected, setSelected }: Props) => {
     <div className="grid grid-cols-3 gap-3">
       {datas.map((data: Idata) => {
         return (
-          <div key={data.name} className="card bg-base-70 w-96 shadow-sm px-7">
+          <div
+            key={data.name}
+            className={`card bg-base-70 w-96 shadow-sm px-7 ${
+              selected.includes(data.name)
+                ? "border-2 border-success"
+                : "border border-gray-200"
+            }`}
+          >
             <div className="card-body">
               <div>
                 <div className="flex items-start justify-between">
@@ -66,7 +74,10 @@ const AvailableTecnology = ({ datas, selected, setSelected }: Props) => {
 
               <div className="card-actions">
                 <button
-                  onClick={() => setSelected([...selected, data.name])}
+                  onClick={() => {
+                    setSelected([...selected, data.name]);
+                    toast.success(`${data.name} is selected successfully`);
+                  }}
                   className="btn btn-neutral w-full"
                   disabled={selected.includes(data.name)}
                 >

@@ -3,6 +3,8 @@ import Banner from "./components/Banner";
 import Nav from "./components/Nav";
 import TecnologyCard from "./components/tecnology/TecnologyCard";
 import type { Idata } from "./types/dataType";
+import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
 
 const tecnologyCardfetch = async (): Promise<Idata[]> => {
   const res = await fetch("/data.json");
@@ -19,14 +21,15 @@ function App() {
   return (
     <>
       <Nav />
-
-      
+      <ToastContainer />
 
       <Banner />
 
       <Suspense fallback={<h2>Loading...</h2>}>
         <TecnologyCard tecnologyCardPromise={tecnologyCardPromise} />
       </Suspense>
+
+      <Footer />
     </>
   );
 }

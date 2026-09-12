@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 interface Props {
   setSelected: React.Dispatch<React.SetStateAction<string[]>>;
 }
@@ -5,6 +6,7 @@ interface Props {
 const RemoveAllTecnology = ({ setSelected }: Props) => {
   const removeAllTechnology = () => {
     setSelected([]);
+    toast.success("Stack cleared successfully!");
   };
 
   return (
