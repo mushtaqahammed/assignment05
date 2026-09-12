@@ -15,7 +15,7 @@ const Banner = () => {
           side by side, and put together the stack that fits your next project.
         </p>
         <div className="mt-8 flex gap-3">
-          <button className="btn btn-dash btn-warning">
+          <button className="btn w-.4xl bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 text-white border-none ">
             Explore Technologies
           </button>
           <input type="button" value="Learn More" className="btn" />

@@ -16,14 +16,19 @@ const TecnologyCard = ({ tecnologyCardPromise }: DataProps) => {
   return (
     <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p>Explore the Technologies</p>
+        <p className="text-4xl font-bold ">
+          Explore the{" "}
+          <span className="bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+            Technologies
+          </span>
+        </p>
 
         <br />
 
         <p>Pick one technology per category to build your ideal stack.</p>
       </div>
 
-      <div className="flex gap-5 my-2">
+      <div className="flex gap-5 my-2 mt-10">
         {/* Available Technology */}
         <AvailableTecnology
           datas={datas}
