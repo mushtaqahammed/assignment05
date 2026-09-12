@@ -81,7 +81,7 @@ const AvailableTecnology = ({ datas, selected, setSelected }: Props) => {
                   className="btn btn-neutral w-full"
                   disabled={selected.includes(data.name)}
                 >
-                  {selected.includes(data.name) ? "Selected" : "Add to Stack"}
+                  {selected.includes(data.name) ? "Added to Stack" : "Add to Stack"}
                 </button>
               </div>
             </div>
