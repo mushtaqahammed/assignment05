@@ -1,4 +1,4 @@
-<!-- Description -->
+                                  Description
 
 * Project Name
 
@@ -21,7 +21,7 @@ Users can add and remove technologies from their stack.
 Selected technologies are shown with a success toast and selected status.
 
 
-<!-- React Questions -->
+                                React Questions
 
 1. What is JSX?
 JSX lets us write HTML-like code in JavaScript.It makes React UI easier to write.
