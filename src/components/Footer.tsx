@@ -1,4 +1,3 @@
-
 import Logo from "../assets/logo-text.png";
 
 const Footer = () => {
