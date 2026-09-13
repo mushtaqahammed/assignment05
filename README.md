@@ -9,16 +9,16 @@ Dev-Stack
 A simple React app where users can explore technologies and build their own development stack.
 
 * Technologies Used
-React
-TypeScript
-Tailwind CSS
-DaisyUI
-React Icons
+React,
+TypeScript,
+Tailwind CSS,
+DaisyUI,
+React Icons,
 React Toastify
 * 3 Features
-Users can explore different technologies.
-Users can add and remove technologies from their stack.
-Selected technologies are shown with a success toast and selected status.
+1. Users can explore different technologies.
+2. Users can add and remove technologies from their stack.
+3. Selected technologies are shown with a success toast and selected status.
 
 
                                 React Questions
